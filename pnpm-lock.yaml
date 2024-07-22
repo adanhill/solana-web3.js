@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 overrides:
   jsdom: ^22
   mock-socket: ^9.3.1
@@ -825,8 +821,8 @@ importers:
         specifier: ^2.6.0
         version: 2.6.0
       undici:
-        specifier: ^6.7.1
-        version: 6.7.1
+        specifier: ^6.19.3
+        version: 6.19.3
       zx:
         specifier: ^7.2.3
         version: 7.2.3
@@ -915,8 +911,8 @@ importers:
         specifier: ^29.6.3
         version: 29.6.3
       undici:
-        specifier: ^6.6.2
-        version: 6.6.2
+        specifier: ^6.19.3
+        version: 6.19.3
       whatwg-fetch:
         specifier: ^3.6.20
         version: 3.6.20
@@ -2932,11 +2928,6 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fastify/busboy@2.1.0:
-    resolution: {integrity: sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==}
-    engines: {node: '>=14'}
-    dev: true
-
   /@graphql-tools/merge@8.3.1(graphql@15.8.0):
     resolution: {integrity: sha512-BMm99mqdNZbEYeTPK3it9r9S6rsZsQKtlqJsSBknAclXq2pGEfOxjcIZi+kBSkHZKPKCRrYDd5vY0+rUmIHVLg==}
     peerDependencies:
@@ -3208,7 +3199,7 @@ packages:
     engines: {node: ^16.10.0 || ^18.12.0 || >=20.0.0}
     peerDependencies:
       canvas: ^2.5.0
-      jsdom: ^22
+      jsdom: '*'
     peerDependenciesMeta:
       canvas:
         optional: true
@@ -12837,16 +12828,9 @@ packages:
     resolution: {integrity: sha512-7r+rI8EcAjs3Th8JYhJUW4K6cNne8aPoQ7f44Y8zZIkLEcn7UkKvbQpFgBu/fbn2YY7k44pn1e7PnTY/vzBnVQ==}
     dev: false
 
-  /undici@6.6.2:
-    resolution: {integrity: sha512-vSqvUE5skSxQJ5sztTZ/CdeJb1Wq0Hf44hlYMciqHghvz+K88U0l7D6u1VsndoFgskDcnU+nG3gYmMzJVzd9Qg==}
-    engines: {node: '>=18.0'}
-    dependencies:
-      '@fastify/busboy': 2.1.0
-    dev: true
-
-  /undici@6.7.1:
-    resolution: {integrity: sha512-+Wtb9bAQw6HYWzCnxrPTMVEV3Q1QjYanI0E4q02ehReMuquQdLTEFEYbfs7hcImVYKcQkWSwT6buEmSVIiDDtQ==}
-    engines: {node: '>=18.0'}
+  /undici@6.19.3:
+    resolution: {integrity: sha512-xWvTmUYvfiKATSKntAVRpPO5bfRcrG9FpiHI916j8dK8nUMjeM0uE8dx7ftKoPUQ2RtRi0KMDL10/03orVgTMA==}
+    engines: {node: '>=18.17'}
     dev: true
 
   /unicode-canonical-property-names-ecmascript@2.0.0:
@@ -13425,3 +13409,7 @@ packages:
       which: 3.0.1
       yaml: 2.3.1
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
